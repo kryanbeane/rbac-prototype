@@ -1,0 +1,15 @@
+domain: heimdall.controller
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: rbac-prototype
+repo: github.com/heimdall-controller/rbac-prototype
+resources:
+- controller: true
+  domain: heimdall.controller
+  group: meta
+  kind: Deployment
+  version: v1
+version: "3"
